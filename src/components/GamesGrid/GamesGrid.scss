@@ -1,0 +1,9 @@
+$b: ".games-list";
+
+#{$b} {
+  display: flex;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
