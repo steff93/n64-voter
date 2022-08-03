@@ -1,25 +1,46 @@
+@import "../mixins.scss";
 $b: ".game-preview";
 
 #{$b} {
-  width: calc(100% / 3);
-  box-shadow: 5px 5px 15px 0 #e9ecef;
-  border-radius: 20px;
+  color: #ffdead;
+  background: #28282b;
 
-  &:not(:last-child) {
-    margin-right: 45px;
-  }
+  width: calc(100% / 3 - 25px);
+  box-shadow: 5px 5px 15px 0 #28282b;
+  border-radius: 20px;
+  margin-bottom: 34px;
 
   &__header {
-    height: 30px;
+    height: remCalc(55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #{$b}__title {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0;
+    }
   }
 
   &__image-container {
     width: 100%;
-    height: 300px;
+    height: remCalc(250);
     cursor: pointer;
+    overflow: hidden;
 
-    background-size: cover;
-    background-repeat: no-repeat;
+    #{$b}__image {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      transition: all ease 0.5s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
   }
 
   &__footer {
@@ -27,13 +48,34 @@ $b: ".game-preview";
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 35px;
-
+    padding: 0 remCalc(15);
+    height: remCalc(55);
     cursor: pointer;
+
+    #{$b}__total-votes {
+      font-weight: 700;
+    }
+
+    #{$b}__actions {
+      display: flex;
+    }
+
+    #{$b}__vote-game {
+      display: flex;
+      align-items: center;
+
+      #{$b}__vote-icon {
+        margin-left: 7px;
+      }
+    }
+
+    #{$b}__vote-reset {
+      margin-left: 15px;
+    }
   }
 
   @media (max-width: 767px) {
     width: 100%;
-    height: 450px;
+    height: remCalc(450);
   }
 }

@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "1080 Snowboarding",
     "released": 1998,
     "editor": "Nintendo",
@@ -8,6 +9,7 @@
     "image": "snowbarding.jpg"
   },
   {
+    "id": 2,
     "title": "Pilotwings 64",
     "released": 1996,
     "editor": "Nintendo",
@@ -16,11 +18,21 @@
     "image": "pilotwings.jpg"
   },
   {
+    "id": 3,
     "title": "Pilotwings 64",
     "released": 1996,
     "editor": "Nintendo",
     "players": 1,
     "genres": ["Simulation"],
     "image": "pilotwings.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Aerogauge",
+    "released": 1997,
+    "editor": "Ascii Entertainment",
+    "players": 2,
+    "genres": ["Course"],
+    "image": "aerogauge.jpg"
   }
 ]

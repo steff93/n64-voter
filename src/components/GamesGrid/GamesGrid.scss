@@ -2,6 +2,8 @@ $b: ".games-list";
 
 #{$b} {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (max-width: 767px) {
     flex-direction: column;
