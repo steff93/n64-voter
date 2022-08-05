@@ -19,12 +19,12 @@
   },
   {
     "id": 3,
-    "title": "Pilotwings 64",
-    "released": 1996,
-    "editor": "Nintendo",
-    "players": 1,
-    "genres": ["Simulation"],
-    "image": "pilotwings.jpg"
+    "title": "Bio Freaks",
+    "released": 1998,
+    "editor": "Midway",
+    "players": 2,
+    "genres": ["Combat"],
+    "image": "bio-freaks.jpg"
   },
   {
     "id": 4,
@@ -34,5 +34,41 @@
     "players": 2,
     "genres": ["Course"],
     "image": "aerogauge.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Blast Corps",
+    "released": 1997,
+    "editor": "Nintendo",
+    "players": 1,
+    "genres": ["Action"],
+    "image": "blast-corps.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Buck Bumble",
+    "released": 1999,
+    "editor": "Ubi Soft",
+    "players": 2,
+    "genres": ["Action"],
+    "image": "buck-bumble.jpg"
+  },
+  {
+    "id": 7,
+    "title": "California Speed",
+    "released": 1999,
+    "editor": "Midway",
+    "players": 2,
+    "genres": ["Course"],
+    "image": "california-speed.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Castlevania",
+    "released": 1999,
+    "editor": "Konami",
+    "players": 1,
+    "genres": ["Plates-formes"],
+    "image": "castlevania.jpg"
   }
 ]
