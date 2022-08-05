@@ -1,0 +1,35 @@
+@import "../mixins.scss";
+
+.header {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 85%;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    background-color: black;
+    opacity: 0.6;
+  }
+
+  &__title {
+    color: #ffdead;
+    position: relative;
+    z-index: 1;
+
+    text-transform: uppercase;
+    font-size: remCalc(52);
+  }
+}
