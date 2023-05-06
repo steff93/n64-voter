@@ -70,5 +70,42 @@
     "players": 1,
     "genres": ["Plates-formes"],
     "image": "castlevania.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Deadly Arts",
+    "released": 1998,
+    "editor": "Konami",
+    "players": 2,
+    "genres": ["Combat"],
+    "image": "deadly-arts.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Glover",
+    "released": 1998,
+    "editor": "Hasbro Interactive",
+    "players": 1,
+    "genres": ["Plates-formes"],
+    "image": "glover.jpg"
+  },
+  {
+    "id": 11,
+
+    "title": "Lego Racers",
+    "released": 1999,
+    "editor": "Lego Media",
+    "players": 2,
+    "genres": ["Course"],
+    "image": "lego-racers.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Mission Impossible",
+    "released": 1998,
+    "editor": "Infogrames",
+    "players": 1,
+    "genres": ["Action"],
+    "image": "mission-impossible.jpg"
   }
 ]

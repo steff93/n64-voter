@@ -1,6 +1,10 @@
+@import "../mixins.scss";
 $b: ".games-list";
 
 #{$b} {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: remCalc(80);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

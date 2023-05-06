@@ -1,4 +1,8 @@
-.App {
+body {
   text-align: center;
   font-family: monospace;
+}
+
+:focus-visible {
+  outline: none;
 }

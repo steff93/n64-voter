@@ -1,21 +1,20 @@
 import { useState } from "react";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
 import LockResetIcon from "@mui/icons-material/LockReset";
+import GameModal from "../GameModal/GameModal";
 import "./GamePreview.scss";
 
 const GamePreview = (props) => {
   const [vote, setVote] = useState(0);
+  const [modal, setModal] = useState(false);
   const { name, imageName, category } = props;
   const imagePath = `/images/${imageName}`;
   const b = "game-preview";
 
-  const upVote = () => {
-    setVote(vote + 1);
-  };
-
-  const resetVote = () => {
-    setVote(0);
-  };
+  const upVote = () => setVote(vote + 1);
+  const resetVote = () => setVote(0);
+  const openModal = () => setModal(true);
+  const closeModal = () => setModal(false);
 
   return (
     <div className={b}>
@@ -23,7 +22,7 @@ const GamePreview = (props) => {
         <h5 className={`${b}__title`}>{name}</h5>
       </div>
 
-      <div className={`${b}__image-container`}>
+      <div className={`${b}__image-container`} onClick={openModal}>
         <div
           className={`${b}__image`}
           style={{
@@ -48,6 +47,13 @@ const GamePreview = (props) => {
           </div>
         </div>
       </div>
+
+      <GameModal
+        open={modal}
+        onClose={closeModal}
+        name={name}
+        imagePath={imagePath}
+      />
     </div>
   );
 };
